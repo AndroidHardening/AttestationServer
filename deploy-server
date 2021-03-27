@@ -5,7 +5,7 @@ set -o errexit
 rm -rf build
 ./gradlew build
 
-remote=root@attestation.app
+remote=root@staging.attestation.app
 path=/opt/attestation
 active=$(ssh $remote readlink $path/deploy)
 
